@@ -3,7 +3,6 @@ window.addEventListener("load", () => {
   let long;
   let lat;
 
-  // Check if geolocation is supported
   if (navigator.geolocation) {
 
     //Get the current position using geolocation
@@ -40,7 +39,7 @@ window.addEventListener("load", () => {
             minute: "2-digit",
           });
 
-          // Log the weather data to the console
+          // Log the weather data
           console.log(
             name,
             icon,
@@ -76,7 +75,6 @@ window.addEventListener("load", () => {
     });
   }
 
-  // Object to manage weather-related functionality
   let weather = {
     savedCities: [],
 
@@ -179,7 +177,6 @@ window.addEventListener("load", () => {
         // Display the weather information
         this.displayWeather(data);
 
-        // Determine the search container to update
         const containerIndex = this.savedCities.length;
         const searchContainer = document.querySelector(`.searchContainer${containerIndex}`);
         if (searchContainer) {
