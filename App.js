@@ -52,7 +52,7 @@ window.addEventListener("load", () => {
           );
 
           // Update the UI with the user weather information
-          document.querySelector(".userCity").innerText = "Weather in " + name;
+          document.querySelector(".userCity").innerText = name;
           document
             .querySelector(".userIcon")
             .setAttribute(
